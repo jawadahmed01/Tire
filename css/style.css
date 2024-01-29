@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden !important;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ==============================
+   Section & Container Styling
+================================= */
+section {
+  padding: 60px 0px;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+/* ==============================
+   Color Styling
+================================= */
+:root {
+  --primary: #eaad48;
+  --secondary: brown;
+  --black-gradient: linear-gradient(
+    90deg,
+    #000 0%,
+    #040303 24%,
+    #120d0f 50%,
+    #130e10 51%,
+    #211d1f 63%,
+    #484647 86%,
+    #626161 100%
+  );
+  --yellow-gradient: linear-gradient(
+    270deg,
+    #000 0%,
+    #040303 24%,
+    #120d0f 50%,
+    #130e10 51%,
+    #221a0e 56%,
+    #4b3c0c 66%,
+    #8e7207 80%,
+    #e9bc01 97%,
+    #fbcb00 100%
+  );
+  --white: #fff;
+  --black: #000;
+  --gray: #939393;
+}
+/* ==============================
+   General Styling
+================================= */
+.text-center {
+  text-align: center !important;
+}
+
+/* ==============================
+   Typography Styling
+================================= */
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* ==============================
+   Flex And Grid Styling
+================================= */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* ==============================
+   Columns Styling
+================================= */
+.col {
+  flex-basis: 100%;
+  min-width: 200px;
+}
+.col-2 {
+  flex-basis: 48%;
+  min-width: 200px;
+}
+.col-3 {
+  flex-basis: 31%;
+  min-width: 200px;
+}
+
+.col-4 {
+  flex-basis: 23%;
+  min-width: 200px;
+}
+
+/* ==============================
+  All Button Styling
+================================= */
+.primary-btn {
+  background: var(--primary);
+  color: var(--black);
+  padding: 10px;
+}
+/* ==============================
+   Hero Section
+================================= */
+#hero {
+    background-image: url("/images/hero-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--white);
+    text-align: center;
+    height: 100vh;
+    position: relative;
+  }
+  #hero .logo {
+    padding: 90px 0px;
+  }
+  #hero .row {
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    padding: 0px 200px;
+  }
+  #hero .row .col-3 {
+    max-width: 360px;
+    margin: auto;
+  }
+  #hero .row .col-3 h1 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  #hero .row .col-3 p {
+    text-align: left;
+    margin-left: 3px;
+  }
+  /* ==============================
+     Specification Section
+  ================================= */
+  #specification .specification-heading {
+    background: var(--black-gradient);
+    color: var(--primary);
+    padding: 12px 0px;
+    margin-bottom: 40px;
+  }
+  #specification .row {
+    width: 100%;
+  }
+  #specification .row .flex {
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+  #specification .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    gap: 0px;
+  }
+  #specification .col-3 {
+    margin: 15px 0px;
+  }
+  /* ==============================
+     Tread Depth Section
+  ================================= */
+  #tread-depth {
+    background-image: url("/images/tread-depth-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  #tread-depth .row {
+    background: var(--white);
+    border-radius: 30px;
+    justify-content: space-between;
+  }
+  #tread-depth .tread-depth-tire-img {
+    padding-left: 70px;
+  }
+  #tread-depth .row h2 {
+    max-width: 550px;
+    margin-left: auto;
+    text-align: right;
+    padding-right: 70px;
+    font-weight: 800;
+  }
+  #tread-depth .tread-col-bg {
+    background: var(--yellow-gradient);
+    padding: 10px 70px;
+    border-top-left-radius: 200px;
+    text-align: right;
+    color: var(--white);
+    margin-top: 40px;
+  }
+  #tread-depth .tread-depth-icons {
+    justify-content: space-between;
+    padding-right: 0px;
+    padding-top: 50px;
+  }
+  #tread-depth .tread-depth-icons .flex {
+    max-width: 100px;
+    margin: auto;
+    gap: 15px;
+  }
+  #tread-depth .tread-depth-icons .flex img {
+    width: 60px;
+  }
+  /* ==============================
+     Purchasing Section
+  ================================= */
+  #purchasing .purchasing-heading {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  #purchasing .row {
+    gap: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #purchasing .row .col-2,
+  .col-1 {
+    background: var(--black-gradient);
+    padding: 40px 40px;
+    color: var(--white);
+    margin: 10px;
+    border-radius: 20px;
+  }
+  #purchasing .row .col-2 img {
+    max-width: 120px;
+  }
+  #purchasing .row .col-2 h4 {
+    text-transform: uppercase;
+    padding: 15px 0px;
+  }
+  #purchasing .col-1 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #purchasing .col-1 h4 {
+    margin-bottom: 15px;
+  }
+  /* ==============================
+    Policy Section
+  ================================= */
+  #policy {
+    background-image: url("/images/policy-background.png");
+    background-repeat: no-repeat;
+    background-size: 60% 80%;
+    color: var(--white);
+  }
+
+/* =================================================================================================
+   Responsive Design in 992px
+================================================================================================== */
+/*1200px and 992px , 768 , 576px Responsive Size Value */
+
+@media only screen and (max-width: 992px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  /* ==============================
+   Section & Container Styling
+================================= */
+  section {
+    padding: 30px 10px;
+  }
+
+  /* ==============================
+   Columns Styling
+================================= */
+}
+
+/* =================================================================================================
+   Responsive Design in 768px
+================================================================================================== */
+
+@media only screen and (max-width: 768px) {
+  /* ==============================
+   Section & Container Styling
+================================= */
+  section {
+    padding: 30px 10px;
+  }
+  /* ==============================
+   Columns Styling
+================================= */
+  .col-25 {
+    width: 100%;
+  }
+  .col-33 {
+    width: 100%;
+  }
+  .col-50 {
+    width: 100%;
+  }
+
+  .col-75 {
+    width: 100%;
+  }
+}
+
+/* =================================================================================================
+   Responsive Design in 576px
+================================================================================================== */
+
+@media only screen and (max-width: 576px) {
+  /* ==============================
+   Section & Container Styling
+================================= */
+  section {
+    padding: 30px 10px;
+  }
+  /* ==============================
+   Typography Styling
+================================= */
+  h1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  h6 {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+}
